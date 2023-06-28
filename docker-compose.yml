@@ -1,0 +1,8 @@
+services:
+  php:
+    image: php:8.2
+    volumes:
+      - ./libresign.coop:/var/www/html
+    ports:
+      - 8088:80
+    command: php -S 0.0.0.0:80 -t /var/www/html
