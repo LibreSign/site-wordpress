@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+.ast-scroll-top-icon::before {
+    content: "\e900";
+    font-family: Astra;
+    text-decoration: inherit;
+    display: flex;
+    transform: rotateX(180deg);
+    padding-left: 8px;
+}
+@media (min-width: 769px) {
+    #ast-scroll-top {
+        content: "769";
+    }
+}
+#ast-scroll-top {
+	background-color: #2b936b;
+	border-radius: 2px;
+	color: #fff;
+	content: "";
+	cursor: pointer;
+	display: none;
+	font-size: 0.70312576904381rem;
+	font-size: 15px;
+	height: 2.1em;
+	line-height: 2.1;
+	position: fixed;
+	text-align: center;
+	width: 2.1em;
+	z-index: 99;
+}
+.ast-scroll-to-top-right {
+	right: 30px;
+	bottom: 30px;
+}
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px,1px,1px,1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+.ast-scroll-top-icon::before {
+	content: "\e900";
+	font-family: Astra;
+	text-decoration: inherit;
+}
+*, ::after, ::before {
+	box-sizing: inherit;
+}
